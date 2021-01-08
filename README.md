@@ -1,4 +1,4 @@
-# **Vue Tailwind Screens Helper** <!-- omit in toc -->
+# **Forked from: Vue Tailwind Screens Helper** <!-- omit in toc -->
 
 [![](https://img.shields.io/npm/v/vue-tailwind-screens-helper.svg?style=flat-square&color=cb3837&logo=npm&logoColor=ffffff)](https://www.npmjs.com/package/vue-tailwind-screens-helper)
 [![](https://img.shields.io/github/license/ewilan-riviere/vue-tailwind-screens-helper.svg?style=flat-square&color=f05032&logo=git&logoColor=ffffff)](https://github.com/ewilan-riviere/vue-tailwind-screens-helper/blob/master/LICENSE)
@@ -111,9 +111,9 @@ Use it in a `vue` file, like `layouts/default.vue`, don't forget to add `client-
 
 ---
 
-## **V. Tailwind breakpoints**
+## **V. My opinionated Tailwind breakpoints**
 
-You can change Tailwind CSS breakpoints into `tailwind.config.js`, helper will adapt it-self when breakpoints change.
+These are my opinionated breakpoints, you can change Tailwind CSS breakpoints into `tailwind.config.js`, helper will adapt it-self when breakpoints change.
 
 ```js
 module.exports = {
@@ -122,10 +122,17 @@ module.exports = {
     extend: {
       // ...
       screens: {
-        xl: '1600px',
-        lg: '1000px',
-        md: '770px',
-        sm: '400px',
+        xs: '320px',
+        sm: '640px',
+        md: '768px',
+        lg: '992px',
+        xl: '1280px',
+        '2xl': '1440px',
+        '3xl': '1680px',
+        '4xl': '1920px',
+        '5xl': '2048px',
+        '6xl': '2160px',
+        '7xl': '2560px',
       },
     },
   },
