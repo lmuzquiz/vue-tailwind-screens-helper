@@ -29,13 +29,13 @@ Display an helper at th left bottom corner in **development mode**, this helper 
 Install it with Yarn or NPM
 
 ```bash
-yarn add -D vue-tailwind-screens-helper
+yarn add -D lmuzquiz-vue-tailwind-screens-helper
 ```
 
 **OR**
 
 ```bash
-npm i vue-tailwind-screens-helper --save-dev
+npm i lmuzquiz-vue-tailwind-screens-helper --save-dev
 ```
 
 ---
@@ -47,18 +47,18 @@ npm i vue-tailwind-screens-helper --save-dev
 Import it, ES6 way, in `main.js` / `app.js` file
 
 ```js
-import TailwindHelper from 'vue-tailwind-screens-helper'
+import TailwindHelper from 'lmuzquiz-vue-tailwind-screens-helper'
 
 Vue.use(TailwindHelper)
 ```
 
 ### *II. b. With Nuxt.js*
 
-Create a `plugins`: `plugins/vue-tailwind-screens.js`
+Create a `plugins`: `plugins/lmuzquiz-vue-tailwind-screens.client.js` notice that the .client part tells nuxt to run the plugin on the client only
 
 ```js
 import Vue from 'vue'
-import TailwindHelper from 'vue-tailwind-screens-helper'
+import TailwindHelper from 'lmuzquiz-vue-tailwind-screens-helper'
 
 Vue.use(TailwindHelper)
 ```
@@ -68,7 +68,7 @@ Import plugin into `nuxt.config.js`
 ```js
 plugins: [
   // ...
-  { src: '~/plugins/vue-tailwind-screens', ssr: false },
+  { src: '~/plugins/vue-tailwind-screens.client'},
 ],
 ```
 
