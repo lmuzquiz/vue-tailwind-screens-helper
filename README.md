@@ -145,4 +145,4 @@ module.exports = {
 
 **MIT** &copy; [**@ewilan-riviere**](https://github.com/ewilan-riviere)
 
-If you want to test directly this plugin with this repo, clone it, install `npm i -g @vue/cli-service-global` and serve application with `yarn dev`
+If you want to test directly this plugin with this repo, clone it, install `npm i @vue/cli-service-global --dev` or ` yarn add @vue/cli-service --dev  ` (might need to use sudo) and then serve application with `yarn dev`
